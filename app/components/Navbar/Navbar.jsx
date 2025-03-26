@@ -15,7 +15,7 @@ export default function Navbar() {
             </div>
 
             {/* Menu for large screens */}
-            <ul className="hidden text-white md:flex space-x-6 font-medium">
+            <ul className="hidden text-white md:flex space-x-6 font-medium lg:ml-28">
                 <li className="hover:text-[#FF693B] transition-all duration-300 cursor-pointer">HOME</li>
                 <li className="hover:text-[#FF693B] transition-all duration-300 cursor-pointer">SERVICE</li>
                 <li className="hover:text-[#FF693B] transition-all duration-300 cursor-pointer">COMBO SALES</li>
