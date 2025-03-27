@@ -24,12 +24,13 @@ export default function SecondSection() {
                 />
                 <div>
 
-                    <p className='text-[#FF693B] text-[16px] absolute bottom-96 left-24'>
+                    <p className='text-[#FF693B] text-[16px] absolute bottom-96 left-24 hidden sm:block'>
                         DIGITAL SERVICES
                     </p>
-                    <p className=" text-4xl text-white text-[48px] font-inter font-bold leading-[24px] tracking-[2%] absolute bottom-80 left-24">
+                    <p className="text-4xl text-white text-[48px] font-inter font-bold leading-[24px] tracking-[2%] absolute bottom-80 left-24 hidden sm:block">
                         Check Our Available Services
                     </p>
+
 
                     {/* Image 2 with button and text */}
                     <div className="absolute top-0 right-0">
@@ -43,7 +44,7 @@ export default function SecondSection() {
                         />
 
                         {/* Button & Text Beside Each Other */}
-                        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex items-center gap-4">
+                        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex items-center gap-4 ">
 
                             <button className="bg-[#FF693B] text-white font-inter font-normal 
                                        text-[16px] leading-[42px] text-center
@@ -56,7 +57,7 @@ export default function SecondSection() {
                     </div>
 
                 </div>
-                <div className="w-11/12 ml-16 border-[1px] border-white absolute bottom-64"></div>
+                <div className="w-11/12 ml-16 border-[1px] border-white absolute bottom-64 hidden sm:block"></div>
                 {/* Add Links Over Image */}
                 <div className="absolute bottom-48 left-24 text-white text-[16px]   leading-[22px] tracking-[0%] text-center uppercase">
                     <a href="#website" className="inline-block px-2 hover:underline font-[Inter] text-[#0C89FF]">Website</a>
@@ -74,22 +75,24 @@ export default function SecondSection() {
 
             </div>
             <div className='bg-[#001555] relative'>
-                <div className="flex flex-wrap md:flex-nowrap ml-24 space-x-8 md:space-x-32 relative z-10"> {/* Use flex-wrap for mobile responsiveness */}
-
+                <div className="flex flex-wrap md:grid md:grid-cols-2 lg:flex ml-6 md:ml-12 lg:ml-24 space-x-0 md:space-x-8 lg:space-x-32 relative z-10">
                     {/* First section */}
-                    <div className="relative max-w-sm p-6 border border-[#FFFFFF38] rounded-lg backdrop-blur-lg bg-[#3158C733] z-20 mb-6 md:mb-0"> {/* Added margin bottom for mobile */}
-                        <div className="flex flex-col items-center justify-center px-8 md:px-16"> {/* Adjusted padding for mobile */}
+                    <div className="relative max-w-sm md:max-w-md p-6 border border-[#FFFFFF38] rounded-lg backdrop-blur-lg bg-[#3158C733] z-20 mb-6">
+                        <div className="flex flex-col items-center justify-center px-6 md:px-10 lg:px-16">
                             <div className="mb-4">
                                 <Image height={400} width={400} src={img3} alt="Logo" className="w-36 object-contain" />
                             </div>
-                            <h3 className="text-white font-inter text-[20px] md:text-[24px] font-[inter] mb-4 text-center">WordPress Website</h3> {/* Adjusted font size */}
-                            <p className="text-white font-normal text-[14px] md:text-[16px] font-[inter] text-center">Design & Development</p> {/* Adjusted font size */}
-
-                            <div className="mt-6 flex gap-4 flex-wrap justify-center"> {/* Added flex-wrap and justify-center */}
-                                <button className="bg-[#0C89FF] text-white font-inter font-normal text-[14px] md:text-[16px] rounded-full px-6 py-2 hover:bg-black duration-300">
+                            <h3 className="text-white font-inter text-[20px] md:text-[22px] lg:text-[24px] mb-4 text-center">
+                                WordPress Website
+                            </h3>
+                            <p className="text-white font-normal text-[14px] md:text-[15px] lg:text-[16px] text-center">
+                                Design & Development
+                            </p>
+                            <div className="mt-6 flex flex-wrap md:flex-nowrap gap-4 justify-center md:justify-between w-full">
+                                <button className="bg-[#0C89FF] text-white font-inter text-[14px] md:text-[15px] lg:text-[16px] rounded-full px-6 py-2 hover:bg-black duration-300 w-full md:w-auto">
                                     Portfolio
                                 </button>
-                                <button className="bg-transparent text-[#0C89FF] border border-[#0C89FF] font-inter font-normal text-[14px] md:text-[16px] rounded-full px-6 py-2 hover:bg-black duration-300">
+                                <button className="bg-transparent text-[#0C89FF] border border-[#0C89FF] font-inter text-[14px] md:text-[15px] lg:text-[16px] rounded-full px-6 py-2 hover:bg-black duration-300 w-full md:w-auto">
                                     Order
                                 </button>
                             </div>
@@ -97,19 +100,20 @@ export default function SecondSection() {
                     </div>
 
                     {/* Second section */}
-                    <div className="relative max-w-sm p-6 border border-[#FFFFFF38] rounded-lg backdrop-blur-lg bg-[#3158C733] z-20 mb-6 md:mb-0">
-                        <div className="flex flex-col items-center justify-center px-8 md:px-16">
+                    <div className="relative max-w-sm md:max-w-md p-6 border border-[#FFFFFF38] rounded-lg backdrop-blur-lg bg-[#3158C733] z-20 mb-6">
+                        <div className="flex flex-col items-center justify-center px-6 md:px-10 lg:px-16">
                             <div className="mb-4">
                                 <Image height={400} width={400} src={img4} alt="Logo" className="w-20 object-contain" />
                             </div>
-                            <h3 className="text-white font-inter font-bold text-xl md:text-2xl mb-4 text-center">Content Writing</h3> {/* Adjusted font size */}
+                            <h3 className="text-white font-inter font-bold text-xl md:text-[22px] lg:text-2xl mb-4 text-center">
+                                Content Writing
+                            </h3>
                             <p className="text-white font-normal text-base text-center">For entire project</p>
-
-                            <div className="mt-6 flex gap-4 flex-wrap justify-center"> {/* Added flex-wrap and justify-center */}
-                                <button className="bg-[#0C89FF] text-white font-inter font-normal text-[14px] md:text-[16px] rounded-full px-6 py-2 hover:bg-black duration-300">
+                            <div className="mt-6 flex flex-wrap md:flex-nowrap gap-4 justify-center md:justify-between w-full">
+                                <button className="bg-[#0C89FF] text-white font-inter text-[14px] md:text-[15px] lg:text-[16px] rounded-full px-6 py-2 hover:bg-black duration-300 w-full md:w-auto">
                                     Portfolio
                                 </button>
-                                <button className="bg-transparent text-[#0C89FF] border border-[#0C89FF] font-inter font-normal text-[14px] md:text-[16px] rounded-full px-6 py-2 hover:bg-black duration-300">
+                                <button className="bg-transparent text-[#0C89FF] border border-[#0C89FF] font-inter text-[14px] md:text-[15px] lg:text-[16px] rounded-full px-6 py-2 hover:bg-black duration-300 w-full md:w-auto">
                                     Order
                                 </button>
                             </div>
@@ -117,26 +121,28 @@ export default function SecondSection() {
                     </div>
 
                     {/* Third section */}
-                    <div className="relative max-w-sm p-6 border border-[#FFFFFF38] rounded-lg backdrop-blur-lg bg-[#3158C733] z-20 mb-6 md:mb-0">
-                        <div className="flex flex-col items-center justify-center px-8 md:px-16">
+                    <div className="relative max-w-sm md:max-w-md p-6 border border-[#FFFFFF38] rounded-lg backdrop-blur-lg bg-[#3158C733] z-20 mb-6">
+                        <div className="flex flex-col items-center justify-center px-6 md:px-10 lg:px-16">
                             <div className="mb-4">
                                 <Image height={400} width={400} src={img5} alt="Logo" className="w-9/12 object-contain" />
                             </div>
-                            <h3 className="text-white font-inter font-bold text-xl md:text-2xl mb-4 text-center">Monthly SEO</h3> {/* Adjusted font size */}
-                            <p className="text-white font-normal text-base text-center">Rank #1 on google </p>
-
-                            <div className="mt-6 flex gap-4 flex-wrap justify-center"> {/* Added flex-wrap and justify-center */}
-                                <button className="bg-[#0C89FF] text-white font-inter font-normal text-[14px] md:text-[16px] rounded-full px-6 py-2 hover:bg-black duration-300">
+                            <h3 className="text-white font-inter font-bold text-xl md:text-[22px] lg:text-2xl mb-4 text-center">
+                                Monthly SEO
+                            </h3>
+                            <p className="text-white font-normal text-base text-center">Rank #1 on Google</p>
+                            <div className="mt-6 flex flex-wrap md:flex-nowrap gap-4 justify-center md:justify-between w-full">
+                                <button className="bg-[#0C89FF] text-white font-inter text-[14px] md:text-[15px] lg:text-[16px] rounded-full px-6 py-2 hover:bg-black duration-300 w-full md:w-auto">
                                     Portfolio
                                 </button>
-                                <button className="bg-transparent text-[#0C89FF] border border-[#0C89FF] font-inter font-normal text-[14px] md:text-[16px] rounded-full px-6 py-2 hover:bg-black duration-300">
+                                <button className="bg-transparent text-[#0C89FF] border border-[#0C89FF] font-inter text-[14px] md:text-[15px] lg:text-[16px] rounded-full px-6 py-2 hover:bg-black duration-300 w-full md:w-auto">
                                     Order
                                 </button>
                             </div>
                         </div>
                     </div>
-
                 </div>
+
+
 
 
                 {/* img6 section (centered and behind the other sections) */}
