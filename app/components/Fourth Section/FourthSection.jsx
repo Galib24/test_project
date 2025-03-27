@@ -5,7 +5,7 @@ import dynamic from "next/dynamic";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-// ✅ Dynamic import with `ssr: false`
+
 const Slider = dynamic(() => import("react-slick"), { ssr: false });
 
 export default function FourthSection() {
@@ -24,7 +24,7 @@ export default function FourthSection() {
     ];
 
     const sliderSettingsWithoutDots = {
-        dots: false, // ❌ No dots for the first slider
+        dots: false, 
         infinite: true,
         speed: 500,
         slidesToShow: 4,
@@ -39,7 +39,7 @@ export default function FourthSection() {
     };
 
     const sliderSettingsWithDots = {
-        dots: true, // ✅ Dots for the second slider
+        dots: true, 
         infinite: true,
         speed: 500,
         slidesToShow: 4,
